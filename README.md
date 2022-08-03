@@ -8,7 +8,7 @@ TBD
 
 ### Requirements
 
-To compile the project ***gcc-arm-none-eabi*** compiler is needed. To install it run:
+To compile the project ***gcc-arm-none-eabi*** compiler is needed. To install it, run:
 ```bash
 sudo apt install gcc-arm-none-eabi
 ```

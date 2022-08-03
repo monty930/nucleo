@@ -15,7 +15,7 @@ sudo apt install gcc-arm-none-eabi
 
 ### Building the project
 
-Run ```make``` in your terminal.
+Run ```make``` in the terminal.
 
 ### Flashing the firmware
 

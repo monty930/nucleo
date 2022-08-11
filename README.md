@@ -14,7 +14,7 @@ TBD
 
 ### Mobile app
 
-Follow this link to download the app. Install it on the Android device. Ignore security warnings.
+On the Android device open .apk file placed in mobile-app folder. Ignore security warnings.
 
 ### Requirements
 

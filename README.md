@@ -15,6 +15,7 @@ TBD
 ### Mobile app
 
 On the Android device open .apk file placed in mobile-app folder. Ignore security warnings.
+
 App made with [MIT App Inventor](https://appinventor.mit.edu/)
 
 ### Requirements

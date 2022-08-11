@@ -33,4 +33,5 @@ Connect NUCLEO board with USB and move the .bin file from build catalogue to the
 
 ### Usage example
 
-TBD
+https://user-images.githubusercontent.com/71830127/184169270-ac2f6d68-8cf9-43b4-a230-52fac8146657.mp4
+

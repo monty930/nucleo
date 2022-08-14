@@ -1,0 +1,1141 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Aug 14 20:55:46 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 73)
+PREFIX = arm-none-eabi-
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 145)
+LDSCRIPT = STM32L476RGTx_FLASH.ld
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from 'Makefile', line 16)
+TARGET = nucleo-project
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# makefile (from 'Makefile', line 107)
+AS_DEFS = 
+# makefile (from 'Makefile', line 116)
+AS_INCLUDES = 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/monty/Apps/stmCube/cube6/workspace/nucleo-project
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/103
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 85)
+SZ = $(PREFIX)size
+# environment
+JOURNAL_STREAM = 8:47910
+# makefile (from 'Makefile', line 138)
+CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"$(@:%.o=%.d)"
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'build/stm32l4xx_hal_uart_ex.d', line 1)
+MAKEFILE_LIST :=  Makefile build/stm32l4xx_hal_dma.d build/stm32l4xx_it.d build/stm32l4xx_hal_exti.d build/stm32l4xx_hal_i2c_ex.d build/stm32l4xx_hal_pwr.d build/stm32l4xx_hal_msp.d build/stm32l4xx_hal_adc_ex.d build/stm32l4xx_hal_i2c.d build/stm32l4xx_hal_dma_ex.d build/main.d build/stm32l4xx_hal_rcc.d build/system_stm32l4xx.d build/stm32l4xx_hal_flash.d build/stm32l4xx_hal_rcc_ex.d build/stm32l4xx_hal_pwr_ex.d build/stm32l4xx_hal_flash_ex.d build/stm32l4xx_hal.d build/stm32l4xx_hal_uart.d build/stm32l4xx_hal_tim.d build/stm32l4xx_hal_flash_ramfunc.d build/stm32l4xx_hal_adc.d build/stm32l4xx_hal_gpio.d build/startup_stm32l476xx.d build/stm32l4xx_hal_cortex.d build/stm32l4xx_hal_tim_ex.d build/stm32l4xx_hal_uart_ex.d
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 84)
+CP = $(PREFIX)objcopy
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 23)
+DEBUG = 1
+# environment
+USERNAME = monty
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/home/monty/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 83)
+AS = $(PREFIX)gcc -x assembler-with-cpp
+# environment
+_ = /snap/code/103/usr/share/code/code
+# environment
+MANAGERPID = 1538
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = pl_PL.UTF-8
+# environment
+VSCODE_CWD = /home/monty
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/monty/.local/bin:/home/monty/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/python:@/tmp/.ICE-unix/1766,unix/python:/tmp/.ICE-unix/1766
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/monty/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/103
+# environment
+SDKMAN_DIR = /home/monty/.sdkman
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+SNAP_VERSION = da76f933
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+SDKMAN_PLATFORM = linuxx64
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 8a87cf6d2ea241ed933d4b7e34e2545a
+# makefile (from 'Makefile', line 150)
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 22020
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'Makefile', line 66)
+ASM_SOURCES = startup_stm32l476xx.s
+# makefile (from 'Makefile', line 25)
+OPT = -Og
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/monty/Apps/stmCube/cube6/workspace/nucleo-project
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1728
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/monty
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/monty/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LOGNAME = monty
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = Hz8RuB8yqeEan_U3uapXEYPfcd5tHKnIDMmxa89tIQ-RG-hjLgBF
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/monty/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 110)
+C_DEFS = -DUSE_HAL_DRIVER -DSTM32L476xx
+# environment
+LC_TIME = pl_PL.UTF-8
+# environment
+SNAP_REAL_HOME = /home/monty
+# makefile (from 'Makefile', line 119)
+C_INCLUDES = -ICore/Inc -IDrivers/STM32L4xx_HAL_Driver/Inc -IDrivers/STM32L4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32L4xx/Include -IDrivers/CMSIS/Include
+# environment
+SDKMAN_VERSION = 5.13.2
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/monty/snap/code/103
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 100)
+FLOAT-ABI = -mfloat-abi=hard
+# makefile (from 'Makefile', line 87)
+HEX = $(CP) -O ihex
+# makefile (from 'Makefile', line 82)
+CC = $(PREFIX)gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from 'Makefile', line 32)
+BUILD_DIR = build
+# makefile (from 'Makefile', line 128)
+ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = monty
+# environment
+SNAP_REVISION = 103
+# environment
+LC_MONETARY = pl_PL.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 94)
+CPU = -mcpu=cortex-m4
+# environment
+LC_TELEPHONE = pl_PL.UTF-8
+# makefile (from 'Makefile', line 97)
+FPU = -mfpu=fpv4-sp-d16
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 149)
+LIBDIR = 
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a7b72d91-1.70.0-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = pl_PL.UTF-8
+# environment
+LC_IDENTIFICATION = pl_PL.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 103)
+MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = Hz8RuB8yqeEan_U3uapXEYPfcd5tHKnIDMmxa89tIQ-RG-hjLgBF
+# environment
+LC_NUMERIC = pl_PL.UTF-8
+# automatic
+<F = $(notdir $<)
+ 
+# environment
+LC_MEASUREMENT = pl_PL.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+SDKMAN_CANDIDATES_DIR = /home/monty/.sdkman/candidates
+# makefile (from 'Makefile', line 88)
+BIN = $(CP) -O binary -S
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from 'Makefile', line 148)
+LIBS = -lc -lm -lnosys 
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 38)
+C_SOURCES = Core/Src/main.c Core/Src/stm32l4xx_it.c Core/Src/stm32l4xx_hal_msp.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c Core/Src/system_stm32l4xx.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 163)
+OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
+# environment
+LC_ADDRESS = pl_PL.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 22066
+# variable set hash-table stats:
+# Load=159/1024=16%, Rehash=0, Collisions=27/286=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2053, inode 12584860): 15 files, no impossibilities.
+# build (device 2053, inode 12859321): 83 files, no impossibilities.
+# Drivers/STM32L4xx_HAL_Driver/Src (device 2053, inode 12585000): No files, no impossibilities so far.
+# Core/Src (device 2053, inode 12584869): No files, no impossibilities so far.
+
+# 98 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile | build
+#  recipe to execute (from 'Makefile', line 167):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+build/%.o: %.s Makefile | build
+#  recipe to execute (from 'Makefile', line 170):
+	$(AS) -c $(CFLAGS) $< -o $@
+
+build/%.hex: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 177):
+	$(HEX) $< $@
+	
+
+build/%.bin: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 180):
+	$(BIN) $< $@	
+	
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+Core/Inc/stm32l4xx_it.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_exti.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.699630247
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_flash_ramfunc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:08.587621438
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.915481459
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.715527395
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_cortex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/main.o: Core/Src/main.c Makefile Core/Src/main.c Core/Inc/main.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h | build
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-08-12 13:22:49.324720715
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build/main.o
+# automatic
+# % := 
+# automatic
+# * := main
+# automatic
+# + := Core/Src/main.c Makefile Core/Src/main.c Core/Inc/main.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+# automatic
+# | := build
+# automatic
+# < := Core/Src/main.c
+# automatic
+# ^ := Core/Src/main.c Makefile Core/Inc/main.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+# automatic
+# ? := Core/Src/main.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/26=4%
+#  recipe to execute (from 'Makefile', line 167):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.931481585
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Core/Src/stm32l4xx_it.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/CMSIS/Include/cmsis_version.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.499525683
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.911481426
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_flash_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build/nucleo-project.elf build/nucleo-project.hex build/nucleo-project.bin
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+
+# Not a target:
+build/stm32l4xx_it.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:02.983577043
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.915481459
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/CMSIS/Include/cmsis_gcc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.495525651
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_dma_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.919481489
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_rcc_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:07.471612596
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_msp.o: Core/Src/stm32l4xx_hal_msp.c Core/Inc/main.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_gpio.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.919481489
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_i2c.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-08-12 13:12:05.1115939
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/nucleo-project.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_rcc.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.915481459
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.915481459
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_uart.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:03.607581987
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:55.65951903
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/CMSIS/Include/cmsis_compiler.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.495525651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_exti.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_flash_ramfunc.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.927481553
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-12 13:22:49.384721194
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 183):
+	mkdir $@		
+
+build/startup_stm32l476xx.o: startup_stm32l476xx.s
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.935481617
+#  File has been updated.
+#  Successfully updated.
+
+build/nucleo-project.elf: build/main.o build/stm32l4xx_it.o build/stm32l4xx_hal_msp.o build/stm32l4xx_hal_tim.o build/stm32l4xx_hal_tim_ex.o build/stm32l4xx_hal_uart.o build/stm32l4xx_hal_uart_ex.o build/stm32l4xx_hal.o build/stm32l4xx_hal_i2c.o build/stm32l4xx_hal_i2c_ex.o build/stm32l4xx_hal_rcc.o build/stm32l4xx_hal_rcc_ex.o build/stm32l4xx_hal_flash.o build/stm32l4xx_hal_flash_ex.o build/stm32l4xx_hal_flash_ramfunc.o build/stm32l4xx_hal_gpio.o build/stm32l4xx_hal_dma.o build/stm32l4xx_hal_dma_ex.o build/stm32l4xx_hal_pwr.o build/stm32l4xx_hal_pwr_ex.o build/stm32l4xx_hal_cortex.o build/stm32l4xx_hal_exti.o build/system_stm32l4xx.o build/stm32l4xx_hal_adc.o build/stm32l4xx_hal_adc_ex.o build/startup_stm32l476xx.o Makefile
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-12 13:22:49.380721162
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+#  recipe to execute (from 'Makefile', line 173):
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+	$(SZ) $@
+
+build/stm32l4xx_it.o: Core/Src/stm32l4xx_it.c Core/Inc/main.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h Core/Inc/stm32l4xx_it.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_adc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:10.111633512
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_tim.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:03.171578532
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_flash.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:08.07161735
+#  File has been updated.
+#  Successfully updated.
+
+Core/Inc/stm32l4xx_hal_conf.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:49.615471163
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.675527077
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_i2c_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:06.95960854
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_rcc_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.935481617
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_pwr.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.235626572
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_uart_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:04.463588768
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_i2c.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.927481553
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Core/Src/system_stm32l4xx.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.935481617
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_uart.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/system_stm32l4xx.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.82363123
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/startup_stm32l476xx.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:10.995640515
+ 
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.915481459
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_dma.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:08.99562467
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_adc_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:10.819639121
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_tim_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:03.259579229
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.927481553
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.927481553
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Core/Inc/main.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 12:22:03.762
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.931481585
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	-rm -fR $(BUILD_DIR)
+
+build/stm32l4xx_hal_adc.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_tim.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_flash_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:08.327619378
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_i2c_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Core/Src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 20:54:21.933286225
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.931481585
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_cortex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.555629107
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_pwr.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:22:49.292720459
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:51.111483011
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_uart_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+startup_stm32l476xx.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_pwr_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.399627871
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.923481521
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_dma_ex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:09.123625685
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Core/Src/stm32l4xx_hal_msp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.935481617
+#  File has been updated.
+#  Successfully updated.
+
+Drivers/CMSIS/Include/mpu_armv7.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.495525651
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_flash.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:56.671527046
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_msp.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:03.083577835
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:04.619590003
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32l4xx_hal_gpio.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:08.791623054
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_dma.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:11:50.931481585
+#  File has been updated.
+#  Successfully updated.
+
+build/stm32l4xx_hal_adc_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_tim_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/nucleo-project.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Drivers/CMSIS/Include/core_cm4.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-08-12 13:11:56.499525683
+#  File has been updated.
+#  Successfully updated.
+
+build/system_stm32l4xx.o: Core/Src/system_stm32l4xx.c Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32l4xx_hal_rcc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-12 13:12:07.131609903
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/stm32l4xx_hal_pwr_ex.o: Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h Core/Inc/stm32l4xx_hal_conf.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/cmsis_version.h Drivers/CMSIS/Include/cmsis_compiler.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/mpu_armv7.h Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=120/1024=12%, Rehash=0, Collisions=72/1812=4%
+# VPATH Search Paths
+
+vpath %.c Core/Src:Drivers/STM32L4xx_HAL_Driver/Src
+
+# 1 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 225 / storage = 6413 B / avg = 28 B
+# current buf: size = 8162 B / used = 6413 B / count = 225 / avg = 28 B
+
+# strcache performance: lookups = 2641 / hit rate = 91%
+# hash-table stats:
+# Load=225/8192=3%, Rehash=0, Collisions=84/2641=3%
+# Finished Make data base on Sun Aug 14 20:55:46 2022
+
+ 

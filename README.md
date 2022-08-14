@@ -8,9 +8,9 @@
 
 ### Board arrangement
 
-Conect leds to pins PA1, PA6, PC0, PC1. Connect bluetooth module HC-06: TXD to PA10, RXD to PA9, as showed below.
+Conect leds handled by app to pins PA1, PC1, PA0, PA6. Connect bluetooth module HC-06: TXD to PA10, RXD to PA9 (remember to decrese the voltage using transistors - from 5V to 3,3V). Connect potentiometer to PC0. As showed below.
 
-TBD
+![Screenshot from 2022-08-14 22-01-24](https://user-images.githubusercontent.com/71830127/184552956-a7628e03-165f-43e4-bec6-fef5f8e80d06.png)
 
 ### Mobile app
 

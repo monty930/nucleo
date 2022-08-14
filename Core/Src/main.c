@@ -65,45 +65,89 @@ static void MX_ADC1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+/**
+  * @brief Number of leds handled by bluetooth module.
+  */
 #define numOfLeds 4
 
+/**
+  * @brief Data received from bluetooth module.
+  */
 uint8_t rxData;
 
+/**
+  * @brief Led number and port.
+  */
 struct led {
   GPIO_TypeDef *ledPort;
   uint16_t led;
 };
 
+/**
+  * @brief Leds handled by bluetooth module and their ports.
+  */
 struct led leds[numOfLeds] = {{LED1_GPIO_Port, LED1_Pin},\
                               {LED2_GPIO_Port, LED2_Pin},\
                               {LED3_GPIO_Port, LED3_Pin},\
                               {LED4_GPIO_Port, LED4_Pin}};
 
+/**
+  * @brief Stores led indices corresponding to possible @f$rxData@f$ values.
+  */
 uint8_t ledIdx[numOfLeds * 2] = {0, 0, 1, 1, 2, 2, 3, 3};
 
+/**
+  * @brief  Given @f$rxData@f$ decide, if led should be turned on or off.
+  * @param  None
+  * @retval Aprropriate led pin state.
+  */
 static GPIO_PinState changeState() {
   if (rxData % 2 == 0)
     return GPIO_PIN_SET;
   return GPIO_PIN_RESET;
 }
 
+/**
+  * @brief  Change appropriate led state (according to @f$rxData@f$).
+  * @param  None
+  * @retval None
+  */
 static void handleLedLight() {
   int idx = ledIdx[rxData];
   HAL_GPIO_WritePin(leds[idx].ledPort, leds[idx].led, changeState());
 }
 
+/**
+  * @param  None
+  * @retval Is @f$rxData@f$ value correct?
+  */
 static bool validateRxData() {
   return rxData < numOfLeds * 2;
 }
 
+/**
+  * @brief  @f$rxData@f$ convertion from char to int.
+  * @param  None
+  * @retval None
+  */
 static void convertData() {
   rxData -= '0';
 }
 
+/**
+  * @brief  Error handling for invalid RxData.
+  * @param  None
+  * @retval None
+  */
 static void handleDataError() {
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 }
 
+/**
+  * @brief  Rx Transfer completed callback.
+  * @param  huart UART handle.
+  * @retval None
+  */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
   if (huart->Instance == USART1) {
     convertData();
@@ -150,52 +194,29 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
   MX_ADC1_Init();
+
   /* USER CODE BEGIN 2 */
 
   HAL_UART_Receive_IT(&huart1, &rxData, 1);
-
   HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-  
-  HAL_Delay(3000);
-
-  uint8_t dataToSend = 48;
-
-  int c = 500;
-  
-  char message[100];
-  sprintf(message, "Hello world!");
-  HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-    if (c > 0) {
-      //c--;
-      HAL_ADC_Start(&hadc1);
-      HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-      
-      uint32_t value = HAL_ADC_GetValue(&hadc1);
-      float voltage = 3300.0f * value / 4096.0f;
-      uint32_t tmp = (uint32_t) voltage;
-
-      uint32_t tmp2 = tmp * 255 / 3300;
-      dataToSend = (uint8_t) tmp2;
-
-      sprintf(message, "hej %ld, %ld, %ld, %d", value, tmp, tmp2, dataToSend);
-      HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
-
-      HAL_UART_Transmit(&huart1, &dataToSend, 1, HAL_MAX_DELAY);
-      HAL_GPIO_TogglePin(ledControl_GPIO_Port, ledControl_Pin);
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
     
-      HAL_Delay(500);
-    }
-    else {
-      HAL_GPIO_TogglePin(ledControl_GPIO_Port, ledControl_Pin);
-    
-      HAL_Delay(50);
-    }
+    uint32_t value = HAL_ADC_GetValue(&hadc1);
+    float voltage = 3300.0f * value / 4096.0f;
+    uint32_t voltageScaled = (uint32_t) (voltage * 255 / 3300);
+    uint8_t dataToSend = (uint8_t) voltageScaled;
+
+    HAL_UART_Transmit(&huart1, &dataToSend, 1, HAL_MAX_DELAY);
+    HAL_GPIO_TogglePin(ledControl_GPIO_Port, ledControl_Pin);
+  
+    HAL_Delay(500);
 
     /* USER CODE END WHILE */
 

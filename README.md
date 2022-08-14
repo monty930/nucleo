@@ -1,6 +1,6 @@
-# nucleo-project
+# Nucleo bluetooth app
 
-4 - led handler controlled on mobile app via bluetooth.
+4 - led handler and potentiometer chart drawer controlled on mobile app via bluetooth.
 
 ### Board used
 

@@ -23,6 +23,8 @@
 /* USER CODE BEGIN Includes */
 
 #include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -41,6 +43,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
@@ -53,6 +57,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -60,45 +65,89 @@ static void MX_USART1_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+/**
+  * @brief Number of leds handled by bluetooth module.
+  */
 #define numOfLeds 4
 
+/**
+  * @brief Data received from bluetooth module.
+  */
 uint8_t rxData;
 
+/**
+  * @brief Led number and port.
+  */
 struct led {
   GPIO_TypeDef *ledPort;
   uint16_t led;
 };
 
+/**
+  * @brief Leds handled by bluetooth module and their ports.
+  */
 struct led leds[numOfLeds] = {{LED1_GPIO_Port, LED1_Pin},\
                               {LED2_GPIO_Port, LED2_Pin},\
                               {LED3_GPIO_Port, LED3_Pin},\
                               {LED4_GPIO_Port, LED4_Pin}};
 
+/**
+  * @brief Stores led indices corresponding to possible @f$rxData@f$ values.
+  */
 uint8_t ledIdx[numOfLeds * 2] = {0, 0, 1, 1, 2, 2, 3, 3};
 
+/**
+  * @brief  Given @f$rxData@f$ decide, if led should be turned on or off.
+  * @param  None
+  * @retval Aprropriate led pin state.
+  */
 static GPIO_PinState changeState() {
   if (rxData % 2 == 0)
     return GPIO_PIN_SET;
   return GPIO_PIN_RESET;
 }
 
+/**
+  * @brief  Change appropriate led state (according to @f$rxData@f$).
+  * @param  None
+  * @retval None
+  */
 static void handleLedLight() {
   int idx = ledIdx[rxData];
   HAL_GPIO_WritePin(leds[idx].ledPort, leds[idx].led, changeState());
 }
 
+/**
+  * @param  None
+  * @retval Is @f$rxData@f$ value correct?
+  */
 static bool validateRxData() {
   return rxData < numOfLeds * 2;
 }
 
+/**
+  * @brief  @f$rxData@f$ convertion from char to int.
+  * @param  None
+  * @retval None
+  */
 static void convertData() {
   rxData -= '0';
 }
 
+/**
+  * @brief  Error handling for invalid RxData.
+  * @param  None
+  * @retval None
+  */
 static void handleDataError() {
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 }
 
+/**
+  * @brief  Rx Transfer completed callback.
+  * @param  huart UART handle.
+  * @retval None
+  */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
   if (huart->Instance == USART1) {
     convertData();
@@ -144,16 +193,31 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
+  MX_ADC1_Init();
+
   /* USER CODE BEGIN 2 */
 
   HAL_UART_Receive_IT(&huart1, &rxData, 1);
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+  while (1) {
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+    
+    uint32_t value = HAL_ADC_GetValue(&hadc1);
+    float voltage = 3300.0f * value / 4096.0f;
+    uint32_t voltageScaled = (uint32_t) (voltage * 255 / 3300);
+    uint8_t dataToSend = (uint8_t) voltageScaled;
+
+    HAL_UART_Transmit(&huart1, &dataToSend, 1, HAL_MAX_DELAY);
+    HAL_GPIO_TogglePin(ledControl_GPIO_Port, ledControl_Pin);
+  
+    HAL_Delay(500);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -208,6 +272,73 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_MultiModeTypeDef multimode = {0};
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+
+  /** Common config
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.LowPowerAutoWait = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc1.Init.OversamplingMode = DISABLE;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure the ADC multi-mode
+  */
+  multimode.Mode = ADC_MODE_INDEPENDENT;
+  if (HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_640CYCLES_5;
+  sConfig.SingleDiff = ADC_SINGLE_ENDED;
+  sConfig.OffsetNumber = ADC_OFFSET_NONE;
+  sConfig.Offset = 0;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -296,10 +427,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, LED3_Pin|LED2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED1_Pin|LD2_Pin|LED4_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED3_Pin|LED1_Pin|LD2_Pin|LED4_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(ledControl_GPIO_Port, ledControl_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -307,19 +441,26 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED3_Pin LED2_Pin */
-  GPIO_InitStruct.Pin = LED3_Pin|LED2_Pin;
+  /*Configure GPIO pin : LED2_Pin */
+  GPIO_InitStruct.Pin = LED2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  HAL_GPIO_Init(LED2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED1_Pin LD2_Pin LED4_Pin */
-  GPIO_InitStruct.Pin = LED1_Pin|LD2_Pin|LED4_Pin;
+  /*Configure GPIO pins : LED3_Pin LED1_Pin LD2_Pin LED4_Pin */
+  GPIO_InitStruct.Pin = LED3_Pin|LED1_Pin|LD2_Pin|LED4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : ledControl_Pin */
+  GPIO_InitStruct.Pin = ledControl_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(ledControl_GPIO_Port, &GPIO_InitStruct);
 
 }
 

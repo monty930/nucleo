@@ -33,7 +33,12 @@ Run ```make``` in the terminal.
 
 Connect NUCLEO board with USB and move the .bin file from build catalogue to the device catalogue (NODE_L476RG).
 
-### Usage example
+### Photos
 
-https://user-images.githubusercontent.com/71830127/184169270-ac2f6d68-8cf9-43b4-a230-52fac8146657.mp4
+<img src="[http://....jpg](https://user-images.githubusercontent.com/71830127/184553153-f5b9bbcc-89a7-4485-b998-59e9f990f706.jpg)" width="200" height="200" />
+
+![usage2](https://user-images.githubusercontent.com/71830127/184553153-f5b9bbcc-89a7-4485-b998-59e9f990f706.jpg) ![usage1](https://user-images.githubusercontent.com/71830127/184553155-6045d31c-7e1c-47e4-b146-c7686cd9525b.png)
+
+
+
 
